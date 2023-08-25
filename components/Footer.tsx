@@ -41,8 +41,7 @@ export default function Footer() {
                     <Link href="/" className='text-gray-500'>Privacy Policy</Link>
                     <Link href="/" className='text-gray-500'>Term of Use</Link>
                 </div>
-            </div>
-            
+            </div>           
         </footer>
     )
 }
