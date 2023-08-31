@@ -1,3 +1,4 @@
+"use client"
 import React, { useState, Fragment } from 'react'
 import { SearchManufacturerProps } from '../types'
 import { Combobox, Transition } from '@headlessui/react'
@@ -43,7 +44,7 @@ export default function SearchManufacturer({ manufacturer, setManufacturer }: Se
                                         className={"search-manufacturer__option"}>
                                             Create "{query}"
                                         </Combobox.Option>
-                                    ): (
+                                    ) : (
                                         filteredManufacturers.map((item) => (
                                             <Combobox.Option key= {item}
                                             className={({active}) => `
