@@ -8,7 +8,7 @@ export default function CustomButton({title, containerStyle, handleClick, btnTyp
     <button disabled = {false}
     type={btnType || "button"}
     className={`custom-btn ${containerStyle}`}
-    onClick={(handleClick) => {}}>
+    onClick={handleClick}>
         <span className={`flex-1 ${textStyles}`}>{title}</span>
         {rightIcon && (
           <div className='relative w-6 h-6'>
