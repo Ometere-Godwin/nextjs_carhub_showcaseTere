@@ -54,8 +54,8 @@ export default function Home() {
 
   useEffect(() => {
     getCars();
-  }, [fuel, year, limit, manufacturer, model])
-  
+  }, [fuel, year, limit, manufacturer, model]);
+
   const isDataEmpty = !Array.isArray(allCars) || allCars.length < 1 || !allCars;
   return (
     <main className="overflow-hidden">
@@ -82,7 +82,7 @@ export default function Home() {
           <section>
             <div className='home__cars-wrapper'>
             {allCars?.map((car) => (
-              <CarCard car = {car}/>
+              <CarCard car = {car} key={car}/>
             ))}
             </div>
 
